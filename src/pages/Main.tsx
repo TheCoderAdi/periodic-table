@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { PeriodicTable } from "../components/PeriodicTable";
 
 const Main = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [showBackgroundParticles, setShowBackgroundParticles] = useState(true);
   const [mounted, setMounted] = useState(false);
 
