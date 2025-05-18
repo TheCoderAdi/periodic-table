@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { PeriodicTable } from "../components/PeriodicTable";
 
 const Main = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [showBackgroundParticles, setShowBackgroundParticles] = useState(true);
+  const [showBackgroundParticles] = useState(true);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -32,7 +31,7 @@ const Main = () => {
     >
       {showBackgroundParticles && (
         <div className="fixed inset-0 pointer-events-none">
-          {Array.from({ length: 20 }).map((_, i) => (
+          {Array.from({ length: 50 }).map((_, i) => (
             <div
               key={i}
               className="absolute bg-neon-cyan rounded-full opacity-20"
